@@ -27,7 +27,7 @@
   font-style: normal;
   font-display: auto;
   src: local("BeaufortForLoL"),
-    url("../assets/fonts/BeaufortForLoL/BeaufortForLOL-Medium.otf")
+    url(@/assets/fonts/BeaufortForLoL/BeaufortForLOL-Medium.otf)
       format("opentype");
 }
 
