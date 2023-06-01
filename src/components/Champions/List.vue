@@ -1,20 +1,22 @@
 <script setup>
-import Card from './Card.vue'
+import Card from "./Card.vue";
 
 const props = defineProps({
   champions: {
     type: Array,
-    required: true
-  }
-})
+    required: true,
+  },
+});
 
 const getImageURL = (filename) => {
-  return `http://ddragon.leagueoflegends.com/cdn/13.10.1/img/champion/${filename}`
-}
+  return `https://ddragon.leagueoflegends.com/cdn/13.10.1/img/champion/${filename}`;
+};
 </script>
 
 <template>
-  <div class="grid xl:grid-cols-12 lg:grid-cols-10 md:grid-cols-8 gap-2 place-content-start">
+  <div
+    class="grid xl:grid-cols-12 lg:grid-cols-10 md:grid-cols-8 gap-2 place-content-start"
+  >
     <Card
       v-for="champion in champions"
       :champion="champion"
