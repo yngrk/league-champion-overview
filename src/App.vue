@@ -1,12 +1,14 @@
 <script setup>
-import { RouterView } from "vue-router";
-import MainHeader from "./components/MainHeader.vue";
-import MainFooter from "./components/MainFooter.vue";
-import { defineAsyncComponent } from "vue";
+import { RouterView } from "vue-router"
+import MainHeader from "./components/MainHeader.vue"
+import MainFooter from "./components/MainFooter.vue"
+import { defineAsyncComponent } from "vue"
 
 const MagicVideoBG = defineAsyncComponent(() =>
   import("@/components/VideoComponents/VideoBackground.vue")
-);
+)
+
+var isChrome = navigator.userAgent.includes("Chrome")
 </script>
 
 <template>
@@ -14,8 +16,7 @@ const MagicVideoBG = defineAsyncComponent(() =>
     <MainHeader>
       <template #VideoBackground>
         <div class="absolute h-full w-full hidden md:block">
-          <MagicVideoBG class="bg-strip -z-40 w-full">
-            <source src="./assets/vfx/magicstrip.mov" type="video/quicktime" />
+          <MagicVideoBG v-if="isChrome" class="bg-strip -z-40 w-full">
             <source src="./assets/vfx/magicstrip.webm" type="video/webm" />
           </MagicVideoBG>
         </div>
