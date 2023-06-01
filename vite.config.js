@@ -12,5 +12,5 @@ export default defineConfig({
     },
   },
   assetsInclude: ["**/*.mov"],
-  base: "/<REPO>/",
+  base: "/league-champion-overview/",
 });
