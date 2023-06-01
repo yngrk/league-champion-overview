@@ -13,4 +13,11 @@ export default defineConfig({
   },
   assetsInclude: ["**/*.mov"],
   base: "/league-champion-overview/",
+  build: {
+    rollupOptions: {
+      output: {
+        assetFileNames: "[name].[ext]",
+      },
+    },
+  },
 });
