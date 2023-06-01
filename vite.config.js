@@ -12,7 +12,7 @@ export default defineConfig({
     },
   },
   assetsInclude: ["**/*.mov", "**/*.otf"],
-  base: "/",
+  base: "/league-champion-overview/",
   build: {
     rollupOptions: {
       output: {
