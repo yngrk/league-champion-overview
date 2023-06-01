@@ -2,156 +2,167 @@
 
 /* Regular normal */
 @font-face {
-  font-family: 'BeaufortForLoL';
+  font-family: "BeaufortForLoL";
   font-weight: 400;
   font-style: normal;
   font-display: auto;
-  src: local('BeaufortForLoL'),
-    url('./fonts/BeaufortForLoL/BeaufortforLOL-Regular.otf') format('opentype');
+  src: local("BeaufortForLoL"),
+    url("./fonts/BeaufortForLoL/BeaufortforLOL-Regular.otf") format("opentype");
 }
 
 /* Regular italic */
 @font-face {
-  font-family: 'BeaufortForLoL';
+  font-family: "BeaufortForLoL";
   font-weight: 400;
   font-style: italic;
   font-display: auto;
-  src: local('BeaufortForLoL'),
-    url('./fonts/BeaufortForLoL/BeaufortforLOL-Italic.otf') format('opentype');
+  src: local("BeaufortForLoL"),
+    url("./fonts/BeaufortForLoL/BeaufortforLOL-Italic.otf") format("opentype");
 }
 
 /* Medium normal */
 @font-face {
-  font-family: 'BeaufortForLoL';
+  font-family: "BeaufortForLoL";
   font-weight: 500;
   font-style: normal;
   font-display: auto;
-  src: local('BeaufortForLoL'),
-    url('./fonts/BeaufortForLoL/BeaufortForLOL-Medium.otf') format('opentype');
+  src: local("BeaufortForLoL"),
+    url("src/assets/fonts/BeaufortForLoL/BeaufortForLOL-Medium.otf")
+      format("opentype");
 }
 
 /* Medium italic */
 @font-face {
-  font-family: 'BeaufortForLoL';
+  font-family: "BeaufortForLoL";
   font-weight: 500;
   font-style: italic;
   font-display: auto;
-  src: local('BeaufortForLoL'),
-    url('./fonts/BeaufortForLoL/BeaufortForLOL-MediumItalic.otf') format('opentype');
+  src: local("BeaufortForLoL"),
+    url("./fonts/BeaufortForLoL/BeaufortForLOL-MediumItalic.otf")
+      format("opentype");
 }
 
 /* Light normal */
 @font-face {
-  font-family: 'BeaufortForLoL';
+  font-family: "BeaufortForLoL";
   font-weight: 300;
   font-style: normal;
   font-display: auto;
-  src: local('BeaufortForLoL'),
-    url('./fonts/BeaufortForLoL/BeaufortForLOL-Light.otf') format('opentype');
+  src: local("BeaufortForLoL"),
+    url("./fonts/BeaufortForLoL/BeaufortForLOL-Light.otf") format("opentype");
 }
 
 /* Light italic */
 @font-face {
-  font-family: 'BeaufortForLoL';
+  font-family: "BeaufortForLoL";
   font-weight: 300;
   font-style: italic;
   font-display: auto;
-  src: local('BeaufortForLoL'),
-    url('./fonts/BeaufortForLoL/BeaufortForLOL-LightItalic.otf') format('opentype');
+  src: local("BeaufortForLoL"),
+    url("./fonts/BeaufortForLoL/BeaufortForLOL-LightItalic.otf")
+      format("opentype");
 }
 
 /* Bold normal */
 @font-face {
-  font-family: 'BeaufortForLoL';
+  font-family: "BeaufortForLoL";
   font-weight: 700;
   font-style: normal;
   font-display: auto;
-  src: local('BeaufortForLoL'),
-    url('./fonts/BeaufortForLoL/BeaufortForLOL-Bold.otf') format('opentype');
+  src: local("BeaufortForLoL"),
+    url("./fonts/BeaufortForLoL/BeaufortForLOL-Bold.otf") format("opentype");
 }
 
 /* Bold italic */
 @font-face {
-  font-family: 'BeaufortForLoL';
+  font-family: "BeaufortForLoL";
   font-weight: 700;
   font-style: italic;
   font-display: auto;
-  src: local('BeaufortForLoL'),
-    url('./fonts/BeaufortForLoL/BeaufortForLOL-BoldItalic.otf') format('opentype');
+  src: local("BeaufortForLoL"),
+    url("./fonts/BeaufortForLoL/BeaufortForLOL-BoldItalic.otf")
+      format("opentype");
 }
 
 /* Heavy normal */
 @font-face {
-  font-family: 'BeaufortForLoL';
+  font-family: "BeaufortForLoL";
   font-weight: 800;
   font-style: normal;
   font-display: auto;
-  src: local('BeaufortForLoL'),
-    url('./fonts/BeaufortForLoL/BeaufortForLOL-Heavy.otf') format('opentype');
+  src: local("BeaufortForLoL"),
+    url("./fonts/BeaufortForLoL/BeaufortForLOL-Heavy.otf") format("opentype");
 }
 
 /* Bold italic */
 @font-face {
-  font-family: 'BeaufortForLoL';
+  font-family: "BeaufortForLoL";
   font-weight: 800;
   font-style: italic;
   font-display: auto;
-  src: local('BeaufortForLoL'),
-    url('./fonts/BeaufortForLoL/BeaufortForLOL-HeavyItalic.otf') format('opentype');
+  src: local("BeaufortForLoL"),
+    url("./fonts/BeaufortForLoL/BeaufortForLOL-HeavyItalic.otf")
+      format("opentype");
 }
 
 /* Spiegel Font */
 
 /* Regular normal */
 @font-face {
-  font-family: 'Spiegel';
+  font-family: "Spiegel";
   font-weight: 400;
   font-style: normal;
   font-display: auto;
-  src: local('Spiegel'), url('./fonts/Spiegel/Spiegel-Regular.otf') format('opentype');
+  src: local("Spiegel"),
+    url("./fonts/Spiegel/Spiegel-Regular.otf") format("opentype");
 }
 
 /* Regular italic */
 @font-face {
-  font-family: 'Spiegel';
+  font-family: "Spiegel";
   font-weight: 400;
   font-style: italic;
   font-display: auto;
-  src: local('Spiegel'), url('./fonts/Spiegel/Spiegel-RegularItalic.otf') format('opentype');
+  src: local("Spiegel"),
+    url("./fonts/Spiegel/Spiegel-RegularItalic.otf") format("opentype");
 }
 
 /* Semibold normal */
 @font-face {
-  font-family: 'Spiegel';
+  font-family: "Spiegel";
   font-weight: 600;
   font-style: normal;
   font-display: auto;
-  src: local('Spiegel'), url('./fonts/Spiegel/Spiegel-SemiBold.otf') format('opentype');
+  src: local("Spiegel"),
+    url("./fonts/Spiegel/Spiegel-SemiBold.otf") format("opentype");
 }
 
 /* Semibold italic */
 @font-face {
-  font-family: 'Spiegel';
+  font-family: "Spiegel";
   font-weight: 600;
   font-style: italic;
   font-display: auto;
-  src: local('Spiegel'), url('./fonts/Spiegel/Spiegel-SemiBoldItalic.otf') format('opentype');
+  src: local("Spiegel"),
+    url("./fonts/Spiegel/Spiegel-SemiBoldItalic.otf") format("opentype");
 }
 
 /* Bold normal */
 @font-face {
-  font-family: 'Spiegel';
+  font-family: "Spiegel";
   font-weight: 700;
   font-style: normal;
   font-display: auto;
-  src: local('Spiegel'), url('./fonts/Spiegel/Spiegel-Bold.otf') format('opentype');
+  src: local("Spiegel"),
+    url("./fonts/Spiegel/Spiegel-Bold.otf") format("opentype");
 }
 
 /* Bold italic */
 @font-face {
-  font-family: 'Spiegel';
+  font-family: "Spiegel";
   font-weight: 700;
   font-style: italic;
   font-display: auto;
-  src: local('Spiegel'), url('./fonts/Spiegel/Spiegel-BoldItalic.otf') format('opentype');
+  src: local("Spiegel"),
+    url("./fonts/Spiegel/Spiegel-BoldItalic.otf") format("opentype");
 }

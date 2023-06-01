@@ -37,7 +37,6 @@ const summonersRiftBG = defineAsyncComponent(() =>
 onMounted(async () => {
   if (champions.list.length === 0) {
     await champions.init();
-    console.log("fetch:champions-list");
   }
 });
 
