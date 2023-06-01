@@ -1,0 +1,1 @@
+import{_ as e,o,c}from"./index-d49ef399.js";const r="/league-champion-overview/summoners-rift-bg.png",s={},t={src:r};function n(_,m){return o(),c("img",t)}const i=e(s,[["render",n]]);export{i as default};

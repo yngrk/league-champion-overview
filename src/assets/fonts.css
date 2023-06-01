@@ -7,7 +7,8 @@
   font-style: normal;
   font-display: auto;
   src: local("BeaufortForLoL"),
-    url("./fonts/BeaufortForLoL/BeaufortforLOL-Regular.otf") format("opentype");
+    url(@/assets/fonts/BeaufortForLoL/BeaufortforLOL-Regular.otf)
+      format("opentype");
 }
 
 /* Regular italic */
@@ -17,7 +18,8 @@
   font-style: italic;
   font-display: auto;
   src: local("BeaufortForLoL"),
-    url("./fonts/BeaufortForLoL/BeaufortforLOL-Italic.otf") format("opentype");
+    url(@/assets/fonts/BeaufortForLoL/BeaufortForLOL-Italic.otf)
+      format("opentype");
 }
 
 /* Medium normal */
@@ -38,7 +40,7 @@
   font-style: italic;
   font-display: auto;
   src: local("BeaufortForLoL"),
-    url("./fonts/BeaufortForLoL/BeaufortForLOL-MediumItalic.otf")
+    url(@/assets/fonts/BeaufortForLoL/BeaufortForLOL-MediumItalic.otf)
       format("opentype");
 }
 
@@ -49,7 +51,8 @@
   font-style: normal;
   font-display: auto;
   src: local("BeaufortForLoL"),
-    url("./fonts/BeaufortForLoL/BeaufortForLOL-Light.otf") format("opentype");
+    url(@/assets/fonts/BeaufortForLoL/BeaufortForLOL-Light.otf)
+      format("opentype");
 }
 
 /* Light italic */
@@ -59,7 +62,7 @@
   font-style: italic;
   font-display: auto;
   src: local("BeaufortForLoL"),
-    url("./fonts/BeaufortForLoL/BeaufortForLOL-LightItalic.otf")
+    url(@/assets/fonts/BeaufortForLoL/BeaufortForLOL-LightItalic.otf)
       format("opentype");
 }
 
@@ -70,7 +73,8 @@
   font-style: normal;
   font-display: auto;
   src: local("BeaufortForLoL"),
-    url("./fonts/BeaufortForLoL/BeaufortForLOL-Bold.otf") format("opentype");
+    url(@/assets/fonts/BeaufortForLoL/BeaufortForLOL-Bold.otf)
+      format("opentype");
 }
 
 /* Bold italic */
@@ -80,7 +84,7 @@
   font-style: italic;
   font-display: auto;
   src: local("BeaufortForLoL"),
-    url("./fonts/BeaufortForLoL/BeaufortForLOL-BoldItalic.otf")
+    url(@/assets/fonts/BeaufortForLoL/BeaufortForLOL-BoldItalic.otf)
       format("opentype");
 }
 
@@ -91,7 +95,8 @@
   font-style: normal;
   font-display: auto;
   src: local("BeaufortForLoL"),
-    url("./fonts/BeaufortForLoL/BeaufortForLOL-Heavy.otf") format("opentype");
+    url(@/assets/fonts/BeaufortForLoL/BeaufortForLOL-Heavy.otf)
+      format("opentype");
 }
 
 /* Bold italic */
@@ -101,7 +106,7 @@
   font-style: italic;
   font-display: auto;
   src: local("BeaufortForLoL"),
-    url("./fonts/BeaufortForLoL/BeaufortForLOL-HeavyItalic.otf")
+    url(@/assets/fonts/BeaufortForLoL/BeaufortForLOL-HeavyItalic.otf)
       format("opentype");
 }
 
@@ -114,7 +119,7 @@
   font-style: normal;
   font-display: auto;
   src: local("Spiegel"),
-    url("./fonts/Spiegel/Spiegel-Regular.otf") format("opentype");
+    url(@/assets/fonts/Spiegel/Spiegel-Regular.otf) format("opentype");
 }
 
 /* Regular italic */
@@ -124,7 +129,7 @@
   font-style: italic;
   font-display: auto;
   src: local("Spiegel"),
-    url("./fonts/Spiegel/Spiegel-RegularItalic.otf") format("opentype");
+    url(@/assets/fonts/Spiegel/Spiegel-RegularItalic.otf) format("opentype");
 }
 
 /* Semibold normal */
@@ -134,7 +139,7 @@
   font-style: normal;
   font-display: auto;
   src: local("Spiegel"),
-    url("./fonts/Spiegel/Spiegel-SemiBold.otf") format("opentype");
+    url(@/assets/fonts/Spiegel/Spiegel-SemiBold.otf) format("opentype");
 }
 
 /* Semibold italic */
@@ -144,7 +149,7 @@
   font-style: italic;
   font-display: auto;
   src: local("Spiegel"),
-    url("./fonts/Spiegel/Spiegel-SemiBoldItalic.otf") format("opentype");
+    url(@/assets/fonts/Spiegel/Spiegel-SemiBoldItalic.otf) format("opentype");
 }
 
 /* Bold normal */
@@ -154,7 +159,7 @@
   font-style: normal;
   font-display: auto;
   src: local("Spiegel"),
-    url("./fonts/Spiegel/Spiegel-Bold.otf") format("opentype");
+    url(@/assets/fonts/Spiegel/Spiegel-Bold.otf) format("opentype");
 }
 
 /* Bold italic */
@@ -164,5 +169,5 @@
   font-style: italic;
   font-display: auto;
   src: local("Spiegel"),
-    url("./fonts/Spiegel/Spiegel-BoldItalic.otf") format("opentype");
+    url(@/assets/fonts/Spiegel/Spiegel-BoldItalic.otf) format("opentype");
 }

@@ -11,7 +11,7 @@ export default defineConfig({
       "@": fileURLToPath(new URL("./src", import.meta.url)),
     },
   },
-  assetsInclude: ["**/*.mov"],
+  assetsInclude: ["**/*.mov", "**/*.otf"],
   base: "/league-champion-overview/",
   build: {
     rollupOptions: {
