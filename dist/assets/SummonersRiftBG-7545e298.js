@@ -1,0 +1,1 @@
+import{_ as s,o as e,c as t}from"./index-e38dd973.js";const o="/%3CREPO%3E/assets/summoners-rift-bg-8f4551a2.png",c={},r={src:o};function n(_,a){return e(),t("img",r)}const f=s(c,[["render",n]]);export{f as default};

@@ -1,0 +1,1 @@
+import{_ as o,o as t,c as n,r}from"./index-e38dd973.js";const s={},a={muted:"",playsinline:"",autoplay:"",loop:""};function c(e,l){return t(),n("video",a,[r(e.$slots,"default")])}const _=o(s,[["render",c]]);export{_ as default};
