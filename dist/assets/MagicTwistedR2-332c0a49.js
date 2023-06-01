@@ -1,0 +1,1 @@
+import{_ as c,o as s,c as t}from"./index-61cf59cc.js";const e="/assets/magic-twisted-R-2-d58a6b2c.png",o={},n={src:e};function r(_,a){return s(),t("img",n)}const d=c(o,[["render",r]]);export{d as default};

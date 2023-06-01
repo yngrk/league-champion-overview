@@ -1,12 +1,12 @@
 <script setup>
-import { RouterView } from 'vue-router'
-import MainHeader from './components/MainHeader.vue'
-import MainFooter from './components/MainFooter.vue'
-import { defineAsyncComponent } from 'vue'
+import { RouterView } from "vue-router";
+import MainHeader from "./components/MainHeader.vue";
+import MainFooter from "./components/MainFooter.vue";
+import { defineAsyncComponent } from "vue";
 
 const MagicVideoBG = defineAsyncComponent(() =>
-  import('@/components/VideoComponents/VideoBackground.vue')
-)
+  import("@/components/VideoComponents/VideoBackground.vue")
+);
 </script>
 
 <template>
@@ -15,8 +15,8 @@ const MagicVideoBG = defineAsyncComponent(() =>
       <template #VideoBackground>
         <div class="absolute h-full w-full hidden md:block">
           <MagicVideoBG class="bg-strip -z-40 w-full">
-            <source src="src/assets/vfx/magicstrip.mov" type="video/quicktime" />
-            <source src="src/assets/vfx/magicstrip.webm" type="video/webm" />
+            <source src="./assets/vfx/magicstrip.mov" type="video/quicktime" />
+            <source src="./assets/vfx/magicstrip.webm" type="video/webm" />
           </MagicVideoBG>
         </div>
       </template>
