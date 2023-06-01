@@ -18,7 +18,7 @@
   font-style: italic;
   font-display: auto;
   src: local("BeaufortForLoL"),
-    url(@/assets/fonts/BeaufortForLoL/BeaufortForLOL-Italic.otf)
+    url(@/assets/fonts/BeaufortForLoL/BeaufortforLOL-Italic.otf)
       format("opentype");
 }
 
@@ -29,7 +29,7 @@
   font-style: normal;
   font-display: auto;
   src: local("BeaufortForLoL"),
-    url(@/assets/fonts/BeaufortForLoL/BeaufortForLOL-Medium.otf)
+    url(@/assets/fonts/BeaufortForLoL/BeaufortforLOL-Medium.otf)
       format("opentype");
 }
 
@@ -40,7 +40,7 @@
   font-style: italic;
   font-display: auto;
   src: local("BeaufortForLoL"),
-    url(@/assets/fonts/BeaufortForLoL/BeaufortForLOL-MediumItalic.otf)
+    url(@/assets/fonts/BeaufortForLoL/BeaufortforLOL-MediumItalic.otf)
       format("opentype");
 }
 
@@ -51,7 +51,7 @@
   font-style: normal;
   font-display: auto;
   src: local("BeaufortForLoL"),
-    url(@/assets/fonts/BeaufortForLoL/BeaufortForLOL-Light.otf)
+    url(@/assets/fonts/BeaufortForLoL/BeaufortforLOL-Light.otf)
       format("opentype");
 }
 
@@ -62,7 +62,7 @@
   font-style: italic;
   font-display: auto;
   src: local("BeaufortForLoL"),
-    url(@/assets/fonts/BeaufortForLoL/BeaufortForLOL-LightItalic.otf)
+    url(@/assets/fonts/BeaufortForLoL/BeaufortforLOL-LightItalic.otf)
       format("opentype");
 }
 
@@ -73,7 +73,7 @@
   font-style: normal;
   font-display: auto;
   src: local("BeaufortForLoL"),
-    url(@/assets/fonts/BeaufortForLoL/BeaufortForLOL-Bold.otf)
+    url(@/assets/fonts/BeaufortForLoL/BeaufortforLOL-Bold.otf)
       format("opentype");
 }
 
@@ -84,7 +84,7 @@
   font-style: italic;
   font-display: auto;
   src: local("BeaufortForLoL"),
-    url(@/assets/fonts/BeaufortForLoL/BeaufortForLOL-BoldItalic.otf)
+    url(@/assets/fonts/BeaufortForLoL/BeaufortforLOL-BoldItalic.otf)
       format("opentype");
 }
 
@@ -95,7 +95,7 @@
   font-style: normal;
   font-display: auto;
   src: local("BeaufortForLoL"),
-    url(@/assets/fonts/BeaufortForLoL/BeaufortForLOL-Heavy.otf)
+    url(@/assets/fonts/BeaufortForLoL/BeaufortforLOL-Heavy.otf)
       format("opentype");
 }
 
@@ -106,7 +106,7 @@
   font-style: italic;
   font-display: auto;
   src: local("BeaufortForLoL"),
-    url(@/assets/fonts/BeaufortForLoL/BeaufortForLOL-HeavyItalic.otf)
+    url(@/assets/fonts/BeaufortForLoL/BeaufortforLOL-HeavyItalic.otf)
       format("opentype");
 }
 
