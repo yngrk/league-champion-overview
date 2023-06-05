@@ -1,54 +1,46 @@
 <script setup>
-import { defineAsyncComponent, onMounted, ref, watch } from "vue";
-import { useChampionsStore } from "@/stores/ChampionsStore";
-import ChampionSelectSideFrame from "../components/SVGComponents/ChampionSelectSideFrame.vue";
-import ChampionSelectHeaderStrip from "../components/SVGComponents/ChampionSelectHeaderStrip.vue";
-import CornerPiece1 from "../components/SVGComponents/CornerPiece1.vue";
-import CornerPiece2 from "../components/SVGComponents/CornerPiece2.vue";
-import SearchBarFrame from "../components/SVGComponents/SearchBarFrame.vue";
-import ChampionList from "../components/Champions/List.vue";
-import RoleIconFill from "../components/SVGComponents/RoleIconFill.vue";
-import RoleIconTop from "../components/SVGComponents/RoleIconTop.vue";
-import RoleIconMid from "../components/SVGComponents/RoleIconMid.vue";
-import RoleIconJungle from "../components/SVGComponents/RoleIconJungle.vue";
-import RoleIconADC from "../components/SVGComponents/RoleIconADC.vue";
-import RoleIconSupport from "../components/SVGComponents/RoleIconSupport.vue";
+import ChampionSelectSideFrame from "../../components/SVGComponents/ChampionSelectSideFrame.vue"
+import ChampionSelectHeaderStrip from "../../components/SVGComponents/ChampionSelectHeaderStrip.vue"
+import CornerPiece1 from "../../components/SVGComponents/CornerPiece1.vue"
+import CornerPiece2 from "../../components/SVGComponents/CornerPiece2.vue"
+import SearchBarFrame from "../../components/SVGComponents/SearchBarFrame.vue"
+import ChampionList from "../../components/Champions/List.vue"
+import RoleIconFill from "../../components/SVGComponents/RoleIconFill.vue"
+import RoleIconTop from "../../components/SVGComponents/RoleIconTop.vue"
+import RoleIconMid from "../../components/SVGComponents/RoleIconMid.vue"
+import RoleIconJungle from "../../components/SVGComponents/RoleIconJungle.vue"
+import RoleIconADC from "../../components/SVGComponents/RoleIconADC.vue"
+import RoleIconSupport from "../../components/SVGComponents/RoleIconSupport.vue"
+import { defineAsyncComponent, onMounted } from "vue"
 
-let searchText = ref("");
-let roleSelect = ref("");
-
-let currentSelectedRole = ref("all");
-
-const champions = useChampionsStore();
+const props = defineProps({
+  currentSelectedRole: {
+    type: String,
+    required: true,
+  },
+  champions: {
+    type: Array,
+    required: true,
+  },
+})
 
 const magicLinear1 = defineAsyncComponent(() =>
   import("@/components/ImageComponents/MagicLinear1.vue")
-);
+)
 const magicTwistedL1 = defineAsyncComponent(() =>
   import("@/components/ImageComponents/MagicTwistedL1.vue")
-);
+)
 const magicTwistedR2 = defineAsyncComponent(() =>
   import("@/components/ImageComponents/MagicTwistedR2.vue")
-);
+)
 const summonersRiftBG = defineAsyncComponent(() =>
   import("@/components/ImageComponents/SummonersRiftBG.vue")
-);
-
-onMounted(async () => {
-  if (champions.list.length === 0) {
-    await champions.init();
-  }
-});
-
-const select = (role) => {
-  roleSelect.value = role;
-  currentSelectedRole.value = role;
-};
+)
 </script>
 
 <template>
   <!-- DESKTOP VIEW -->
-  <section class="h-full mt-8 hidden md:block">
+  <section>
     <div class="h-full relative mx-auto md:px-16 champion-select-container">
       <div class="flex justify-between h-full px-5">
         <div class="flex flex-col w-full">
@@ -60,7 +52,7 @@ const select = (role) => {
             >
               <div
                 class="relative w-5 cursor-pointer"
-                @click="($event) => select('all')"
+                @click="($event) => $emit('select', 'all')"
               >
                 <RoleIconFill
                   :class="[
@@ -80,7 +72,7 @@ const select = (role) => {
 
               <div
                 class="relative w-5 cursor-pointer"
-                @click="($event) => select('top')"
+                @click="($event) => $emit('select', 'top')"
               >
                 <RoleIconTop
                   :class="[
@@ -98,7 +90,7 @@ const select = (role) => {
 
               <div
                 class="relative w-5 cursor-pointer"
-                @click="($event) => select('jungle')"
+                @click="($event) => $emit('select', 'jungle')"
               >
                 <RoleIconJungle
                   :class="[
@@ -116,7 +108,7 @@ const select = (role) => {
 
               <div
                 class="relative w-5 cursor-pointer"
-                @click="($event) => select('mid')"
+                @click="($event) => $emit('select', 'mid')"
               >
                 <RoleIconMid
                   :class="[
@@ -134,7 +126,7 @@ const select = (role) => {
 
               <div
                 class="relative w-5 cursor-pointer"
-                @click="($event) => select('adc')"
+                @click="($event) => $emit('select', 'adc')"
               >
                 <RoleIconADC
                   :class="[
@@ -152,7 +144,7 @@ const select = (role) => {
 
               <div
                 class="relative w-7 cursor-pointer"
-                @click="($event) => select('support')"
+                @click="($event) => $emit('select', 'support')"
               >
                 <RoleIconSupport
                   :class="[
@@ -185,7 +177,7 @@ const select = (role) => {
             <div class="flex justify-end self-center relative flex-1">
               <input
                 type="text"
-                v-model="searchText"
+                @input="$emit('searchInput', $event)"
                 placeholder="Search"
                 class="bg-transparent px-2 h-8 focus:outline-none champion-select-search"
               />
@@ -203,7 +195,7 @@ const select = (role) => {
             <div class="champion-list-container p-0 absolute opacity-80 z-30">
               <ChampionList
                 class="pt-4 px-2 h-full w-full masked-overflow"
-                :champions="champions.filter(searchText, roleSelect)"
+                :champions="champions"
               />
             </div>
 
