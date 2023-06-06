@@ -20,7 +20,7 @@ onMounted(async () => {
   // if no champion associated with the id then redirect to home
   try {
     const response = await axios.get(
-      `http://ddragon.leagueoflegends.com/cdn/13.11.1/data/en_US/champion/${championId}.json`
+      `https://ddragon.leagueoflegends.com/cdn/13.11.1/data/en_US/champion/${championId}.json`
     )
 
     const data = response.data.data[championId]
@@ -40,11 +40,11 @@ onMounted(async () => {
       spells: data.spells,
     }
 
-    splashURL.value = `http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${
+    splashURL.value = `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${
       championData.value.name
     }_${championData.value.skins[currentSkinPos.value].num}.jpg`
 
-    skinURL.value = `http://ddragon.leagueoflegends.com/cdn/img/champion/loading/${
+    skinURL.value = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${
       championData.value.name
     }_${championData.value.skins[currentSkinPos.value].num}.jpg`
 
@@ -65,11 +65,11 @@ const nextSkinPos = () => {
     currentSkinPos.value = 0
   }
 
-  splashURL.value = `http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${
+  splashURL.value = `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${
     championData.value.name
   }_${championData.value.skins[currentSkinPos.value].num}.jpg`
 
-  skinURL.value = `http://ddragon.leagueoflegends.com/cdn/img/champion/loading/${
+  skinURL.value = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${
     championData.value.name
   }_${championData.value.skins[currentSkinPos.value].num}.jpg`
 }
@@ -85,11 +85,11 @@ const prevSkinPos = () => {
     currentSkinPos.value = championData.value.skins.length - 1
   }
 
-  splashURL.value = `http://ddragon.leagueoflegends.com/cdn/img/champion/splash/${
+  splashURL.value = `https://ddragon.leagueoflegends.com/cdn/img/champion/splash/${
     championData.value.name
   }_${championData.value.skins[currentSkinPos.value].num}.jpg`
 
-  skinURL.value = `http://ddragon.leagueoflegends.com/cdn/img/champion/loading/${
+  skinURL.value = `https://ddragon.leagueoflegends.com/cdn/img/champion/loading/${
     championData.value.name
   }_${championData.value.skins[currentSkinPos.value].num}.jpg`
 }
