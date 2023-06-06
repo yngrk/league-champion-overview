@@ -106,7 +106,7 @@ const getSkinName = () => {
 </script>
 
 <template>
-  <section class="pt-12 px-12 relative">
+  <section v-if="isMounted" class="pt-12 px-12 relative">
     <!-- BACKGROUND IMAGE -->
     <img
       :src="splashURL"
@@ -116,19 +116,23 @@ const getSkinName = () => {
 
     <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
       <!-- SIDE -->
-      <div class="col-span-1 place-self-center hidden md:block">
+      <div class="relative col-span-1 place-self-center hidden md:block">
         <img :src="skinURL" class="border-2 border-lol-gold-5" />
         <!-- Control -->
-        <div
-          class="flex w-full justify-between text-xl text-lol-gold-1 bg-lol-gray-6"
+        <button
+          class="text-8xl h-1/2 absolute bottom-0 top-32 right-3 scale-y-150 text-lol-gold-1 opacity-50 hover:opacity-80 transition-opacity duration-300"
+          @click="nextSkinPos"
         >
-          <button @click="prevSkinPos" class="flex-1">
-            <div class="rotate-180 opacity-75">&#10148;</div>
-          </button>
-          <div v-if="isMounted" class="w-fit">{{ getSkinName() }}</div>
-          <button @click="nextSkinPos" class="flex-1">
-            <div class="opacity-75">&#10148;</div>
-          </button>
+          &#10095;
+        </button>
+        <button
+          class="text-8xl h-1/2 absolute bottom-0 top-32 left-3 -scale-x-100 scale-y-150 text-lol-gold-1 opacity-50 hover:opacity-80 transition-opacity duration-300"
+          @click="prevSkinPos"
+        >
+          &#10095;
+        </button>
+        <div class="absolute bottom-4 w-full text-lg text-center">
+          {{ getSkinName() }}
         </div>
       </div>
 
