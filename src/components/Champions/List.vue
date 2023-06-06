@@ -22,7 +22,6 @@ const getImageURL = (filename) => {
       :champion="champion"
       class="card hover:scale-105 transition-all duration-200 hover:cursor-pointer active:scale-100"
       :imageURL="getImageURL(champion.image.full)"
-      @click="() => console.log(champion.image.full)"
     />
   </div>
 </template>

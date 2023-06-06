@@ -13,7 +13,7 @@ var isChrome = navigator.userAgent.includes("Chrome")
 
 <template>
   <div class="flex flex-col h-full mx-auto">
-    <MainHeader class="">
+    <MainHeader>
       <template #VideoBackground>
         <div class="absolute h-full w-full hidden md:block">
           <MagicVideoBG v-if="isChrome" class="bg-strip -z-40 w-full">
