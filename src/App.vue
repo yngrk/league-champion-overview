@@ -1,7 +1,6 @@
 <script setup>
 import { RouterView } from "vue-router"
 import MainHeader from "./components/MainHeader.vue"
-import MainFooter from "./components/MainFooter.vue"
 import { defineAsyncComponent } from "vue"
 
 const MagicVideoBG = defineAsyncComponent(() =>
@@ -24,8 +23,6 @@ var isChrome = navigator.userAgent.includes("Chrome")
     </MainHeader>
 
     <RouterView />
-
-    <MainFooter class="mt-auto"></MainFooter>
   </div>
 </template>
 
