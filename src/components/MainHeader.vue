@@ -12,7 +12,7 @@ import GithubIcon from "@/components/SVGComponents/GithubIcon.vue"
         >League Champion Lore</RouterLink
       >
       <a
-        href="https://yngrk.github.com"
+        href="https://github.com/yngrk/league-champion-overview/"
         class="md:flex justify-center items-center gap-2 py-1 px-2 rounded bg-lol-gray-5 bg-opacity-10 hidden border border-lol-gold-4 opacity-80"
       >
         <GithubIcon class="w-6" /> Young Rok Kim, 2023
