@@ -120,13 +120,13 @@ const getSkinName = () => {
         <img :src="skinURL" class="border-2 border-lol-gold-5" />
         <!-- Control -->
         <button
-          class="text-8xl h-1/2 absolute bottom-0 top-32 right-3 scale-y-150 text-lol-gold-1 opacity-50 hover:opacity-80 transition-opacity duration-300"
+          class="text-8xl h-1/2 absolute bottom-0 top-32 right-3 scale-y-150 text-lol-gold-1 opacity-20 hover:opacity-80 transition-opacity duration-300"
           @click="nextSkinPos"
         >
           &#10095;
         </button>
         <button
-          class="text-8xl h-1/2 absolute bottom-0 top-32 left-3 -scale-x-100 scale-y-150 text-lol-gold-1 opacity-50 hover:opacity-80 transition-opacity duration-300"
+          class="text-8xl h-1/2 absolute bottom-0 top-32 left-3 -scale-x-100 scale-y-150 text-lol-gold-1 opacity-20 hover:opacity-80 transition-opacity duration-300"
           @click="prevSkinPos"
         >
           &#10095;
